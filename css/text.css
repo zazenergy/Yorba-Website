@@ -1,0 +1,458 @@
+/*
+  960 Grid System ~ Text CSS.
+  Learn more ~ http://960.gs/
+
+  Licensed under GPL and MIT.
+*/
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+body {
+  background-repeat: repeat;
+  background-image: url(/images/blue2.png);
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  color: #636669;
+  line-height: 1.5;
+
+  
+}
+
+code {
+	font-family: monospace;
+	color: #463F80;
+	font-size: 16px;
+	 
+}
+
+pre {
+  font-family: Arial, sans-serif;
+}
+
+hr {
+  border: 0 #ccc solid;
+  border-top-width: 1px;
+  clear: both;
+  height: 0;
+}
+
+a {
+    text-decoration: none;
+
+}
+ 
+a:link {
+    color: #4A58A1;
+    text-shadow:#fff 0px 1px 0;
+}
+
+a:visited {
+    color: #636669;
+}
+
+a:hover {
+	color: #4A58A1;
+	text-decoration: underline;
+}
+
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+
+h1 {
+  font-size: 40px;
+ 
+}
+
+h2 {
+  font-size: 23px;
+}
+
+h3 {
+  font-size: 21px;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 19px;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+
+li {
+  margin-left: 30px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+  margin-bottom: 20px;
+}
+
+p {
+	font-size: 18px;
+}
+/* `Header, Footer, Mission----------------------------------------------------------------------------------------------------*/
+
+.navigation li {
+	float: left;
+	list-style: none;
+	font-family: 'Gudea', Arial, sans-serif;
+	font-size: 18px;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+
+.navigation a {
+	color: #6A6B70;
+	
+}
+
+.footer h2{
+	text-align: center;
+	list-style: none;
+	padding-left: 30px;
+}
+
+
+.footer li{
+	float: none;
+	list-style: none;
+	font-family: 'Gudea', Arial, sans-serif;
+	font-size: 16px;
+	text-align: center;
+}
+
+.footer {
+	margin-top: 20px;
+}
+
+.footer a{
+	color: #636669;
+}
+
+.footer a:hover {
+	color: #4A58A1;
+} 
+
+.news {
+	border-top-color: black;
+	margin-bottom: 30px; 
+	padding-top: 20px;
+	padding-bottom: 40px;
+	color: #636669;
+	background: #FFFFFF;
+	text-align: left;	
+	border-top: 2px solid white;
+	border-top-width: 2px;
+	border-top-style: solid;
+	font-size: 15px; 
+	z-index: 1000;
+	-moz-box-shadow: rgba(0,0,0,.25) 2px 2px 2px 2px;
+	-webkit-box-shadow: rgba(0,0,0,.25) 2px 2px 2px 2px;
+	box-shadow: rgba(0,0,0,.25) 2px 2px 2px 2px;
+}
+
+.news a {
+	color: #6A6B70;
+}
+
+.blue {
+    background: #fafcff; 
+    padding: 0 60px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(#f7fbff)); 
+}
+
+.shadow {
+  -moz-box-shadow:    2px 2px 2px 2px #ccc;
+  -webkit-box-shadow: 2px 2px 2px 2px #ccc;
+  box-shadow:         2px 2px 2px 2px #ccc;
+}
+
+.navigation a:hover {
+	color: #4A58A1;
+	border: none;
+	text-shadow:0px 1px 0.5 #aaa, 0 -1px 0 #000;
+}
+
+.navigation ul li {
+  	margin-top: 25px;
+}
+
+.line_break {
+	margin-top: 20px;
+	background-image: -webkit-gradient(linear, left top, right top, from(#fff), to(#f7fbff));
+}
+
+.dark_background {
+	background: #bfbcb3;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.dark_background p{
+	color: #636669;
+}
+
+.dark_background h1 a{
+	color: #636669;
+	text-shadow: none;
+	font-weight: 100;
+	text-decoration: none;	
+}
+
+.dark_background h1 {
+	text-shadow: #fff 0px 1px 0, #000 0 -1px 0;
+	line-height:2em; font-size:3em; font-weight:bold;
+}
+
+.dark_background h2 a{
+	color: #292249;
+	text-shadow: none;
+	font-weight: 100;
+}
+
+.dark_background a:hover {
+	color: #4A58A1;
+}
+
+.background h1 a{
+	color: white;
+	text-shadow: none;
+	font-weight: 100;
+	text-decoration: none;	
+}
+
+.background li{
+	color: white;
+	text-shadow: none;
+	font-weight: 100;
+	list-style-type: none;
+	font-size: 16px;	
+}
+
+.background h1 {
+	color: white;
+	text-shadow: none;
+	font-weight: 100;
+}
+
+.background h2 {
+	font-size: 50px;
+}
+
+.background h2 a{
+	color: white;
+	text-shadow: none;
+	font-weight: 100;
+}
+
+.background h3 {
+	color: white;
+}
+
+.background a:hover {
+	color: #4A58A1;
+}
+
+.sexy_line { 
+	margin: 30px;
+    height: 1px;
+    border-bottom: 100px;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, #bbccf2));
+}
+
+.shotwell_photo {
+	background-image: url(/images/harbor.png)
+
+}
+
+.shotwell_install_photo {
+	background-image: url(/images/fireworks.png)
+
+}
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px;
+	-webkit-box-shadow:inset 0px 1px 0px 0px;
+	box-shadow:inset 0px 1px 0px 0px;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:2px solid #dcdcdc;
+	display:inline-block;
+	color:#43b5c9;
+	text-align: center;
+	font-family:arial;
+	font-size:30px;
+	font-weight:bold;
+    padding-top: 20px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}
+
+.myButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+	color:#4A58A1;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+	color:#43b5c9;
+}
+
+.myButton a {
+	color:#43b5c9;
+}
+
+.sidebar {
+	margin-top: 10px;
+	padding-bottom: 35px;
+	padding-top: 35px;	
+	margin-bottom: 10px;
+}
+
+
+.white_background {
+	background: white;
+	padding-left: 5px;
+}
+
+
+#os_selection li{
+	float: left;
+	list-style: none;
+	font-family: 'Gudea', Arial, sans-serif;
+	font-size: 18px;
+	margin-left: none;
+	padding-bottom: 20px;
+}
+	
+
+.gray_background {
+	background: #C3C2BF;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+.bottom_spacing {
+	margin-bottom: 32px;
+}
+
+.top_spacing {
+	margin-top: 30px;
+}
+
+.border_install {
+	background-color: aqua;
+}
+
+.callout h1{
+	font-size: 100px;
+	padding-left: 10px;
+	color: #636669;
+}
+
+.callout p{
+	font-size: 30px;
+	padding-left: 10px;
+}
+
+.center_feature {
+	text-align: center;
+}
+
+.letterpress {
+	text-shadow: #fff 0px 1px 0, #000 0 -1px 0;
+	line-height:2em; font-size:3em; font-weight:bold;
+}
+
+#geary {
+	-moz-box-shadow: 3px 3px 3px 3px #888;
+  	-webkit-box-shadow: 3px 3px 3px 3px #888;
+ 
+}
+
+.main_callout {
+	font-family: 'Norican', cursive;
+	font-size: 75px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#shotwell_callout {
+	color: #cccccc;
+}
+
+#shotwell_callout h1 {
+	font-size: 50px;
+}
+
+.center {
+	text-align: center;
+}
+
+.left_room {
+	padding-left: 10px;
+}
+/*
+li.blue a:hover{
+	 background:rgba(26,116,188,0.5);
+}
+
+li.red a:hover{
+	background:rgba(188,25,115,0.5);
+}
+
+li.green a:hover {
+	background:rgba(115,188,25,0.5);
+}
+
+li.yellow a:hover {
+	background:#DEDEDE;
+}
+
+*/
