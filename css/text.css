@@ -423,6 +423,15 @@ p {
 	padding-top: 20px;
 }
 
+.main_product {
+	text-align: center;
+	padding-bottom: 0px;
+}
+
+.main_product h1 {
+	margin-bottom: 0px;
+}
+
 #shotwell_callout {
 	color: #cccccc;
 }
@@ -438,6 +447,8 @@ p {
 .left_room {
 	padding-left: 10px;
 }
+
+
 /*
 li.blue a:hover{
 	 background:rgba(26,116,188,0.5);
