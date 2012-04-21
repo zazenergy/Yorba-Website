@@ -307,6 +307,10 @@ p {
 
 }
 
+.geary_install_photo {
+	background-image: url(/images/geary/geary_main.png)
+}
+
 .myButton {
 	-moz-box-shadow:inset 0px 1px 0px 0px;
 	-webkit-box-shadow:inset 0px 1px 0px 0px;
@@ -449,8 +453,18 @@ p {
 	color: #cccccc;
 }
 
+
 #shotwell_callout h1 {
 	font-size: 50px;
+}
+
+#geary_callout {
+	background-color: white;
+	color: #d5d5d5;
+}
+
+#geary_callout h1 {
+	font-size: 35px;
 }
 
 .center {
