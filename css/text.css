@@ -40,21 +40,23 @@ hr {
 
 a {
     text-decoration: none;
-
 }
  
+p a {
+	color: #4A58A1;
+}
+
 a:link {
     color: #4A58A1;
     text-shadow:#fff 0px 1px 0;
 }
 
 a:visited {
-    color: #636669;
+    color: #4A58A1;
 }
 
 a:hover {
 	color: #4A58A1;
-	text-decoration: underline;
 }
 
 
@@ -445,9 +447,15 @@ p {
 	
 }
 
-.main_product h1 {
+
+.main_product a {
 	margin-bottom: 0px;
+	color: #636363;
 }
+
+.product_names a{
+	color: #636363;
+} 
 
 #shotwell_callout {
 	color: #cccccc;
