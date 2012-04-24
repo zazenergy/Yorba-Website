@@ -461,10 +461,11 @@ p {
 #geary_callout {
 	background-color: white;
 	color: #d5d5d5;
+	text-align: left;
 }
 
 #geary_callout h1 {
-	font-size: 35px;
+	font-size: 50px;
 }
 
 .center {

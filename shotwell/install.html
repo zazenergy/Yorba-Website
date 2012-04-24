@@ -16,9 +16,9 @@
 		  
 		  <div class="grid_6 push_1 navigation">
 		  	<ul>
-		  		<li><a href="/">Products</a></li>
+		  		<li><a href="/products.html">Products</a></li>
 		  		<li><a href="/contribute.html">Contribute</a></li>
-		  		<li><a href="/">Blog</a></li>
+		  		<li><a href="http://blog.yorba.org/">Blog</a></li>
 		  		<li><a href="/about.html">About</a></li>
 		  		
 		  	</ul>
@@ -30,26 +30,26 @@
 			<div class="grid_12 push_1">
 			 <br>
 				 
-			<h1>Introducing Shotwell 0.12</h1>
+			<h1><FONT COLOR="bbbbbb">Introducing Shotwell 0.12</font></h1>
 		
-			<h3>Some of the new features in the latest version of Shotwell:</h3>
+			<h3><font color="bbbbbb">Some of the new features in the latest version of Shotwell:</font></h3>
 			<ul>
-				<li><FONT COLOR="bbbbbb">New Feature: Straighten photos</font></li>
-		        <li><FONT COLOR="bbbbbb">Improved Flickr support</font></li>
-		        <li><FONT COLOR="bbbbbb">Support for GTK 3.0</font></li>
-		        <li><FONT COLOR="bbbbbb">Improved filtering</font></li>
-		        <li><b><FONT COLOR="bbbbbb">Over 140 bug fixes</font> </font></b></li>
-			</ul>
-		 
-		
+				<li><FONT COLOR="bbbbbb">Straighten photo feature</font></li>
+		        <li><FONT COLOR="bbbbbb">Support for GTK+3</font></li>
+		        <li><FONT COLOR="bbbbbb">Flickr login now uses OAuth authentication</font></li>
+		        <li><FONT COLOR="bbbbbb">Greater support for Android devices</font></li>
+		        <li><FONT COLOR="bbbbbb">Saved searches can exclude all photos tagged with a given string</font></li>
+		        <li><b><FONT COLOR="bbbbbb">Lots of bug fixes!</font></b></li>
+			</ul> 
+			
 			<div class="grid_3 myButton top_spacing bottom_spacing">
-				<a href="http://yorba.org/shotwell/install/"><p>Documentation</p></a>
+				<a href="http://yorba.org/shotwell/help/"><p>Documentation</p></a>
 			</div>
 			<div class="grid_3 myButton top_spacing bottom_spacing">
-				<a href="http://yorba.org/shotwell/install/"><p>Support</p></a>
+				<a href="http://redmine.yorba.org/projects/shotwell/wiki"><p>Support</p></a>
 			</div>
 			<div class="grid_3 myButton top_spacing bottom_spacing">
-				<a href="http://yorba.org/shotwell/install/"><p>Release Notes</p></a>
+				<a href="http://redmine.yorba.org/projects/shotwell/wiki/ShotwellFAQ"><p>FAQs</p></a>
 			</div>
 		</div>
 	</div>
@@ -59,9 +59,8 @@
 			<h2>Select Your Operating System</h2>
 					<form action method="post" name="form1">
 						<ul>
-		    			<div><li><input type="radio" name="group1" value="opt2">Fedora</li></div>  
-		    			<div><li><input type="radio" name="group1" value="opt3">openSUSE</li></div>
-		    			<div><li><input type="radio" name="group1" value="opt4">Generic Linux</li></div> 
+		    			<div><li><input type="radio" name="group1" value="opt3">Generic Linux</li></div> 
+		    			<div><li><input type="radio" name="group1" value="opt2">Fedora</li></div>
 		    			<div><li><input type="radio" name="group1" value="opt1">Ubuntu</li></div>
 		    			</ul> 
 		    		</form>
@@ -69,31 +68,28 @@
 		
 			<div class= "grid_12" id="ubuntu">
 				<h2><u>Binaries</u></h2>
-								<p>Ubuntu 11.10 (Oneiric Ocelot) ships with Shotwell 0.11.x pre-installed. Oneiric users will be upgraded to the latest version, 0.11.6, automatically as part of their software update cycle. Users of Ubuntu 11.04 (Natty Narwhal) can install Shotwell 0.11.6 from the Yorba Personal Package Archive. To install from Yorba's PPA, simply add the PPA to your repository list, update it, and install Shotwell:</p>
+								<p>Ubuntu 12.04 (Precise Pangolin) will ship with Shotwell 0.12 pre-installed. Precise users will be upgraded to the latest version automatically as part of their software update cycle. Users of Ubuntu 11.10 (Oneiric Ocelot) may install Shotwell 0.12 from the <a href="https://launchpad.net/~yorba/+archive/ppa">Yorba Personal Package Archive</a>. To install from Yorba's PPA, simply add the PPA to your repository list, update it, and install Shotwell:</p>
 					<code>
 						$ sudo add-apt-repository ppa:yorba/ppa <br/>
 						$ sudo apt-get update <br/>
+						$ sudo apt-get install shotwell<br/>
 					</code>
 					<br>
 				<h2><u>From source</u></h2>
-				<p>Shotwell 0.11.6 is supported on Ubuntu 11.04 (Natty Narwhal) and later. You can download Shotwell either from the source tarball (recommended for stable release) or from our git server for the latest code.</p>
+				<p>Shotwell 0.12 is supported on Ubuntu 11.10 (Oneiric Ocelot) and later. You can download Shotwell either from the source tarball (recommended for a stable release) or from our git server for the latest code.</p>
 				<h2>Building Shotwell from source tarball</h2>
-				<p>If you are installing Shotwell 0.11.6 from the source tarball, you can install dependencies for Shotwell like this:</p>
-					<code>$ sudo apt-get install libgconf2-dev libgee-dev libgexiv2-dev libglib2.0-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libgtk2.0-dev libgudev-1.0-dev libexif-dev libgphoto2-2-dev libraw-dev libsoup2.4-dev libxml2-dev libsqlite3-dev m4 libunique-dev libwebkit-dev <br/><br/>
+				<p>If you are building Shotwell 0.12 from the source tarball or git master, you can install dependencies for Shotwell like this:</p>
+					<code>$ sudo apt-get install libgconf2-dev libgee-dev libgexiv2-dev libglib2.0-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libgtk2.0-dev libgudev-1.0-dev libexif-dev libgphoto2-2-dev libraw-dev librest-dev libsoup2.4-dev libxml2-dev libsqlite3-dev m4 libunique-dev libwebkit-dev valac-0.16 <br/><br/>
 					</code>
 					
-				<p>If you're installing Shotwell 0.11.6 on Ubuntu 11.10 (Oneiric Ocelot), an additional step is required. The version of the Vala compiler that comes with Oneiric is 0.14.0, but Shotwell must be built with Vala 0.12.x. Vala 0.12.1 is available in the Oneiric repositories. To install it, simply add valac-0.12 to the dependency list above.</p>
-				<p>To use the Vala 0.12.1 compiler on Oneiric, set your VALAC environment variable to point to it. You can do this by entering: 
-					<code>$ export VALAC=valac-0.12</code> on the command line before building Shotwell.</p>
-				<h2>Building Shotwell from git master</h2>
-				<p>If you're building Shotwell directly from git master on Oneiric, you will need to install the following dependencies for Shotwell:<p>
-					<code>$ sudo apt-get install libgconf2-dev libgee-dev libgexiv2-dev libglib2.0-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libgtk-3-dev libgudev-1.0-dev libexif-dev libgphoto2-2-dev libraw-dev libsoup2.4-dev libxml2-dev libsqlite3-dev m4 libunique-3.0-dev libwebkitgtk-3.0-dev</code>
-				<p>Additionally, for those building Shotwell directly from git master on Oneiric, installation of the Vala 0.12.1 compiler is unnecessary; the current development snapshot of Shotwell builds with (and requires) Vala 0.15.x. You can install Vala 0.15.x from the <a href="https://launchpad.net/~vala-team/+archive/ppa">Vala PPA</a>.</p>
+				<p>If you're building Shotwell 0.12 on Ubuntu 11.10 (Oneiric Ocelot), you will need to install Vala 0.16 from the <a href="https://launchpad.net/~vala-team/+archive/ppa">Vala PPA.</a></p>
+				
 				<h3>Download source</h3>
 				<p>There are two ways to download the Shotwell source code:<br/></p>
 					<ul>
-						<li><p>Download the <a href="/download/shotwell/0.11/shotwell-0.11.6.tar.bz2">source tarball</a>: recommended for a stable release</p></li>
+						<li><p>Download the <a href="http://yorba.org/download/shotwell/stable/shotwell-0.12.2.tar.bz2">source tarball</a>: recommended for a stable release</p></li>
 						<li><p>For the latest code, check out the source from our git server:</p></li>
+					</ul>
 						<code>$ git clone git://yorba.org/shotwell<br/><br/></code>
 				<h3>Build and install</h3>
 				<p>To build and install Shotwell, go to the directory where you unpacked or checked out the source code, and type the following commands:</p>
@@ -117,20 +113,21 @@
 			
 			<div class= "grid_12" id="fedora" style="display: none;">
 				<h2><u>Binaries</u></h2>
-				<p>We recommend installing the latest version, Shotwell 0.11.6, from source; see below.</p> 
+				<p>We recommend installing the latest version, Shotwell 0.12, from source; see below.</p> 
 					
 				<h2><u>From source</u></h2>
-				<p>Shotwell 0.11.6 is supported on Fedora Core 15 and later.</p>
+				<p>Shotwell 0.12 is supported on Fedora Core 16 and later.</p>
 
 				<p>You can install dependencies for Shotwell like this:</p>
-					<code>$ pkcon install GConf2-devel libgee-devel libgexiv2-devel glib2-devel gstreamer-devel gstreamer-plugins-base-devel gtk3-devel libgudev1-devel libexif-devel libgphoto2-devel LibRaw-devel libsoup-devel libstdc++-devel libxml2-devel sqlite-devel m4 unique3-devel webkitgtk3-devel <br/><br/>
+					<code>$ pkcon install GConf2-devel libgee-devel libgexiv2-devel glib2-devel gstreamer-devel gstreamer-plugins-base-devel gtk3-devel libgudev1-devel libexif-devel libgphoto2-devel LibRaw-devel libsoup-devel libstdc++-devel libxml2-devel rest-devel sqlite-devel m4 unique3-devel vala webkitgtk3-devel<br/><br/>
 					</code>
 					
 				<h3>Download source</h3>
 				<p>There are two ways to download the Shotwell source code:<br/></p>
 					<ul>
-						<li>Download the <a href="/download/shotwell/0.11/shotwell-0.11.6.tar.bz2">source tarball</a>: recommended for a stable release</li>
+						<li>Download the <a href="http://yorba.org/download/shotwell/stable/shotwell-0.12.2.tar.bz2">source tarball</a>: recommended for a stable release</li>
 						<li><p>For the latest code, check out the source from our git server:</p></li>
+					</ul>
 						<code>$ git clone git://yorba.org/shotwell<br/><br/></code>
 				<h3>Build and install</h3>
 				<p>To build and install Shotwell, go to the directory where you unpacked or checked out the source code, and type the following commands:</p>
@@ -140,104 +137,55 @@
 					# make install<br/><br/></code>
 				
 				<p>By default, Shotwell will install in <tt>/usr/local</tt>. The <tt>configure</tt> script can customize the prefix directory. Run <tt>./configure --help</tt> for instructions and other installation options.</p>
-				<p>You need to execute <tt>make install</tt> as root (i.e. <tt>sudo make install</tt>) if installing to system directories. </p>
-				
-				<h2><u>Running Shotwell</u></h2>
-				<p>Shotwell has a runtime dependency:</p>
-					<ul>
-						<li><a href="http://librsvg.sourceforge.net/">librsvg2-common</a> (2.14.0)</li>
-					</ul>
-				<p>You may execute Shotwell directly from its build directory by typing</p>
-				<code>$ ./shotwell</code>
+				<p>You need to execute <tt>make install</tt> as root (i.e. <tt>sudo make install</tt>) if installing to system directories. </p>			
 			</div>
-			
-			<div class="grid_12" id="suse" style="display: none;">
-			<h2><u>From source</u></h2>
-			<p>Shotwell should run, but is unsupported, on openSUSE Factory.</p>
-			<p>You can install dependencies for Shotwell like this:</p>
-			
-			<code>$ sudo zypper install gconf2-devel libgee-devel libgexiv2-devel glib2-devel gstreamer-0_10-devel gstreamer-0_10-plugins-base-devel gtk-devel libgudev-1_0-devel libexif-devel libgphoto2-devel libraw-devel libsoup-devel libxml2-devel sqlite3-devel m4 libunique-devel libwebkit-devel </code>
-			<br>	
-			<br>
-			<p>openSUSE Factory ships with Vala 0.13.x, but Vala 0.12.x is required to build Shotwell 0.11.6. You must build Vala 0.12.x from source yourself.
-
-</p>
-
-<h3>Download source</h3>
-				<p>There are two ways to download the Shotwell source code:<br/></p>
-					<ul>
-						<li><p>Download the <a href="/download/shotwell/0.11/shotwell-0.11.6.tar.bz2">source tarball</a>: recommended for a stable release</p></li>
-						<li><p>For the latest code, check out the source from our git server:</p></li>
-						<code>$ git clone git://yorba.org/shotwell<br/><br/></code>
-				<h3>Build and install</h3>
-				<p>To build and install Shotwell, go to the directory where you unpacked or checked out the source code, and type the following commands:</p>
-					<code>
-					$ ./configure<br/>
-					$ make<br/>
-					# make install<br/><br/></code>
-				
-				<p>By default, Shotwell will install in <tt>/usr/local</tt>. The <tt>configure</tt> script can customize the prefix directory. Run <tt>./configure --help</tt> for instructions and other installation options.</p>
-				<p>You need to execute <tt>make install</tt> as root (i.e. <tt>sudo make install</tt>) if installing to system directories. </p>
-				
-				<h2><u>Running Shotwell</u></h2>
-				<p>Shotwell has a runtime dependency:</p>
-					<ul>
-						<li><a href="http://librsvg.sourceforge.net/">librsvg2-common</a> (2.14.0)</li>
-					</ul>
-				<p>You may execute Shotwell directly from its build directory by typing</p>
-				<code>$ ./shotwell</code>
-			</div>
-			
-			
 			<div class="grid_12" id="other" style="display: none;">
-			<h2><u>From source</u></h2>
-			<p>Shotwell's dependencies include:</p>
+				<h2><u>From source</u></h2>
+				<p>Shotwell's dependencies include:</p>
+							<ul>
+								<li><a href="http://live.gnome.org/Libgee">gee-1.0</a> (0.5.0)</li>
+								<li><a href="http://redmine.yorba.org/projects/gexiv2/wiki">gexiv2</a> (0.2.0)</li>
+								<li>gio-unix-2.0 (2.20)</li>
+								<li><a href="http://library.gnome.org/devel/glib/">glib-2.0</a> (2.26)</li>
+								<li>gmodule-2.0 (2.24.0)</li>
+								<li><a href="http://gstreamer.freedesktop.org/documentation/gstreamer010.html">gstreamer-0.10</a> (0.10.32)</li>
+								<li><a href="http://gstreamer.freedesktop.org/documentation/gstreamer010.html">gstreamer-base-0.10</a> (0.10.32)</li>
+								<li><a href="http://gstreamer.freedesktop.org/documentation/gstreamer010.html">gstreamer-pbutils-0.10</a> (0.10.32)</li>
+								<li><a href="http://www.gtk.org/">gtk+-3.0</a> (3.0.11)</li>
+								<li><a href="http://hal.freedesktop.org/releases/">gudev-1.0</a> (145)</li>
+								<li><a href="http://libexif.sourceforge.net/">libexif</a> (0.6.16)</li>
+								<li><a href="http://www.gphoto.org/">libgphoto2</a> (2.4.2)  (Note that 2.4.6 has a <a href="http://sourceforge.net/tracker/?func=detail&amp;aid=2824422&amp;group_id=8874&amp;atid=108874">bug</a> that prevents Shotwell from fetching EXIF metadata before importing a photo.)</li>
+								<li><a href="http://www.libraw.org/download#stable">libraw</a> (0.9.0)</li>
+								<li><a href="http://live.gnome.org/Librest">librest</a> (0.7)</li>
+								<li><a href="http://live.gnome.org/LibSoup">libsoup-2.4</a> (2.26.0)</li>
+								<li><a href="http://xmlsoft.org/">libxml-2.0</a> (2.6.32)</li>
+								<li><a href="http://www.gnu.org/software/m4/">m4</a> (1.4.13)</li>
+								<li><a href="http://www.sqlite.org/">sqlite3</a> (3.5.9)</li>
+								<li><a href="http://live.gnome.org/LibUnique">unique-1.0</a> (1.0.0)</li>
+								<li><a href="http://live.gnome.org/Vala/Release">vala</a> (0.15.2)</li>
+								<li><a href="http://live.gnome.org/WebKitGtk">webkit-1.0</a> (1.4.0)</li>
+							</ul>
+						<h3>Download source</h3>
+					<p>There are two ways to download the Shotwell source code:<br/></p>
 						<ul>
-							<li><a href="http://projects.gnome.org/gconf/">gconf-2.0</a> (2.22.0)</li>
-							<li><a href="http://live.gnome.org/Libgee">gee-1.0</a> (0.5.0)</li>
-							<li><a href="http://redmine.yorba.org/projects/gexiv2/wiki">gexiv2</a> (0.2.0)</li>
-							<li>gio-unix-2.0 (2.20)</li>
-							<li><a href="http://library.gnome.org/devel/glib/">glib-2.0</a> (2.26)</li>
-							<li>gmodule-2.0 (2.24.0)</li>
-							<li><a href="http://gstreamer.freedesktop.org/documentation/gstreamer010.html">gstreamer-0.10</a> (0.10.32)</li>
-							<li><a href="http://gstreamer.freedesktop.org/documentation/gstreamer010.html">gstreamer-base-0.10</a> (0.10.32)</li>
-							<li><a href="http://gstreamer.freedesktop.org/documentation/gstreamer010.html">gstreamer-pbutils-0.10</a> (0.10.32)</li>
-							<li><a href="http://www.gtk.org/">gtk+-2.0</a> (2.18.0)</li>
-							<li><a href="http://hal.freedesktop.org/releases/">gudev-1.0</a> (145)</li>
-							<li><a href="http://libexif.sourceforge.net/">libexif</a> (0.6.16)</li>
-							<li><a href="http://www.gphoto.org/">libgphoto2</a> (2.4.2)  (Note that 2.4.6 has a <a href="http://sourceforge.net/tracker/?func=detail&amp;aid=2824422&amp;group_id=8874&amp;atid=108874">bug</a> that prevents Shotwell from fetching EXIF metadata before importing a photo.)</li>
-							<li><a href="http://www.libraw.org/download#stable">libraw</a> (0.9.0)</li>
-							<li><a href="http://live.gnome.org/LibSoup">libsoup-2.4</a> (2.26.0)</li>
-							<li><a href="http://xmlsoft.org/">libxml-2.0</a> (2.6.32)</li>
-							<li><a href="http://www.gnu.org/software/m4/">m4</a> (1.4.13)</li>
-							<li><a href="http://www.sqlite.org/">sqlite3</a> (3.5.9)</li>
-							<li><a href="http://live.gnome.org/LibUnique">unique-1.0</a> (1.0.0)</li>
-							<li><a href="http://live.gnome.org/Vala/Release">vala</a> (0.11.7)</li>
-							<li><a href="http://live.gnome.org/WebKitGtk">webkit-1.0</a> (1.1.5)</li>
+							<li><p>Download the <a href="http://yorba.org/download/shotwell/stable/shotwell-0.12.2.tar.bz2">source tarball</a>: recommended for a stable release</p></li>
+							<li><p>For the latest code, check out the source from our git server:</p></li>
+							<code>$ git clone git://yorba.org/shotwell<br/><br/></code>
 						</ul>
-					<h3>Download source</h3>
-				<p>There are two ways to download the Shotwell source code:<br/></p>
-					<ul>
-						<li><p>Download the <a href="/download/shotwell/0.11/shotwell-0.11.6.tar.bz2">source tarball</a>: recommended for a stable release</p></li>
-						<li><p>For the latest code, check out the source from our git server:</p></li>
-						<code>$ git clone git://yorba.org/shotwell<br/><br/></code>
-				<h3>Build and install</h3>
-				<p>To build and install Shotwell, go to the directory where you unpacked or checked out the source code, and type the following commands:</p>
-					<code>
-					$ ./configure<br/>
-					$ make<br/>
-					# make install<br/><br/></code>
-				
-				<p>By default, Shotwell will install in <tt>/usr/local</tt>. The <tt>configure</tt> script can customize the prefix directory. Run <tt>./configure --help</tt> for instructions and other installation options.</p>
-				<p>You need to execute <tt>make install</tt> as root (i.e. <tt>sudo make install</tt>) if installing to system directories. </p>
-				
-				<h2><u>Running Shotwell</u></h2>
-				<p>Shotwell has a runtime dependency:</p>
-					<ul>
-						<li><a href="http://librsvg.sourceforge.net/">librsvg2-common</a> (2.14.0)</li>
-					</ul>
-				<p>You may execute Shotwell directly from its build directory by typing</p>		
-				<code>$ ./shotwell</code>					
+					<h3>Build and install</h3>
+					<p>To build and install Shotwell, go to the directory where you unpacked or checked out the source code, and type the following commands:</p>
+						<code>
+						$ ./configure<br/>
+						$ make<br/>
+						# make install<br/><br/></code>
+					
+					<p>By default, Shotwell will install in <tt>/usr/local</tt>. The <tt>configure</tt> script can customize the prefix directory. Run <tt>./configure --help</tt> for instructions and other installation options.</p>
+					<p>You need to execute <tt>make install</tt> as root (i.e. <tt>sudo make install</tt>) if installing to system directories. </p>
+					
+					<h2><u>Running Shotwell</u></h2>
+	
+					<p>You may execute Shotwell directly from its build directory by typing</p>		
+					<code>$ ./shotwell</code>					
 
 			</div>
 		</div>
@@ -279,13 +227,14 @@
 		  </div> 
 		  
 		  <div class="grid_3 footer">
+
 			  <a href="/"><h2>About</h2></a>
 				<ul> 
 					<li><a href="http://blog.yorba.org/">Blog</a></li>
 					<li><a href="http://yorba.org/jobs/">Jobs</a></li>
 				</ul>  
-		  </div> <!--This is the end of the footer-->
-		 </div>
+		  </div>
+	</div> <!--This is the end of the footer-->
 		<script src="../scripts/jquery-1.7.1.min.js"></script>
 		<script src="../scripts/install.js"></script> 
 	</body>
