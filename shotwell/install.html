@@ -67,7 +67,7 @@
 			</div>
 		
 			<div class= "grid_12 bottom_spacing" id="ubuntu">
-				<h2><u>Binaries</u></h2>
+				<h1>Binaries</h1>
 								<p>Ubuntu 12.04 (Precise Pangolin) will ship with Shotwell 0.12 pre-installed. Precise users will be upgraded to the latest version automatically as part of their software update cycle. Users of Ubuntu 11.10 (Oneiric Ocelot) may install Shotwell 0.12 from the <a href="https://launchpad.net/~yorba/+archive/ppa">Yorba Personal Package Archive</a>. To install from Yorba's PPA, simply add the PPA to your repository list, update it, and install Shotwell:</p>
 					<code>
 						$ sudo add-apt-repository ppa:yorba/ppa <br/>
@@ -75,13 +75,14 @@
 						$ sudo apt-get install shotwell<br/>
 					</code>
 					<br>
-				<h2><u>From source</u></h2>
+				<h1>From source</h1>
 				<p>Shotwell 0.12 is supported on Ubuntu 11.10 (Oneiric Ocelot) and later. You can download Shotwell either from the source tarball (recommended for a stable release) or from our git server for the latest code.</p>
+				
 				<h2>Building Shotwell from source tarball</h2>
 				<p>If you are building Shotwell 0.12 from the source tarball or git master, you can install dependencies for Shotwell like this:</p>
 					<code>$ sudo apt-get install libgconf2-dev libgee-dev libgexiv2-dev libglib2.0-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libgtk2.0-dev libgudev-1.0-dev libexif-dev libgphoto2-2-dev libraw-dev librest-dev libsoup2.4-dev libxml2-dev libsqlite3-dev m4 libunique-dev libwebkit-dev valac-0.16 <br/><br/>
 					</code>
-					
+
 				<p>If you're building Shotwell 0.12 on Ubuntu 11.10 (Oneiric Ocelot), you will need to install Vala 0.16 from the <a href="https://launchpad.net/~vala-team/+archive/ppa">Vala PPA.</a></p>
 				
 				<h3>Download source</h3>
@@ -101,21 +102,17 @@
 				<p>By default, Shotwell will install in <tt>/usr/local</tt>. The <tt>configure</tt> script can customize the prefix directory. Run <tt>./configure --help</tt> for instructions and other installation options.</p>
 				<p>You need to execute <tt>make install</tt> as root (i.e. <tt>sudo make install</tt>) if installing to system directories. </p>
 				
-				<h2><u>Running Shotwell</u></h2>
-				<p>Shotwell has a runtime dependency:</p>
-					<ul>
-						<li><a href="http://librsvg.sourceforge.net/">librsvg2-common</a> (2.14.0)</li>
-					</ul>
+				<h2>Running Shotwell</h2>
 				<p>You may execute Shotwell directly from its build directory by typing</p>
 				<code>$ ./shotwell</code>
 
 			</div>
 			
 			<div class= "grid_12 bottom_spacing" id="fedora" style="display: none;">
-				<h2><u>Binaries</u></h2>
+				<h1>Binaries</h1>
 				<p>We recommend installing the latest version, Shotwell 0.12, from source; see below.</p> 
 					
-				<h2><u>From source</u></h2>
+				<h1>From source</h1>
 				<p>Shotwell 0.12 is supported on Fedora Core 16 and later.</p>
 
 				<p>You can install dependencies for Shotwell like this:</p>
@@ -140,7 +137,7 @@
 				<p>You need to execute <tt>make install</tt> as root (i.e. <tt>sudo make install</tt>) if installing to system directories. </p>			
 			</div>
 			<div class="grid_12 bottom_spacing" id="other" style="display: none;">
-				<h2><u>From source</u></h2>
+				<h1>From source</h1>
 				<p>Shotwell's dependencies include:</p>
 							<ul>
 								<li><a href="http://live.gnome.org/Libgee">gee-1.0</a> (0.5.0)</li>
@@ -182,7 +179,7 @@
 					<p>By default, Shotwell will install in <tt>/usr/local</tt>. The <tt>configure</tt> script can customize the prefix directory. Run <tt>./configure --help</tt> for instructions and other installation options.</p>
 					<p>You need to execute <tt>make install</tt> as root (i.e. <tt>sudo make install</tt>) if installing to system directories. </p>
 					
-					<h2><u>Running Shotwell</u></h2>
+					<h2>Running Shotwell</h2>
 	
 					<p>You may execute Shotwell directly from its build directory by typing</p>		
 					<code>$ ./shotwell</code>					
