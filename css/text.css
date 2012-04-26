@@ -193,12 +193,6 @@ p {
 	font-weight: bold;
 }
 
-.profile {
-	margin-bottom: 40px;
-	padding-left: 20px;
-}
-
-
 .navigation a:hover {
 	color: #4A58A1;
 	border: none;
@@ -340,6 +334,11 @@ p {
 .main_product {
 	text-align: center;
 	padding-bottom: 0px;
+	
+}
+
+.main_product h1 {
+	margin-bottom: 0px;
 }
 
 .main_product a {
@@ -371,4 +370,8 @@ p {
 	text-align: center;
 }
 
+.profile {
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
 
