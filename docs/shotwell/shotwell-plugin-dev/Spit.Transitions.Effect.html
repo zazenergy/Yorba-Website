@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <title>Vala Binding Reference</title>
+    <link href="../style.css" rel="stylesheet" type="text/css"/>
+    <script src="../scripts.js" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <div class="site_header">Spit.Transitions.Effect Reference Manual</div>
+    <div class="site_body">
+      <div class="site_navigation">
+        <ul class="navi_main">
+          <li class="package_index">
+            <a href="../index.html">Packages</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="package">
+            <a href="index.htm">shotwell-plugin-dev</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="namespace">
+            <a href="Spit.html">Spit</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="namespace">
+            <a href="Spit.Transitions.html">Transitions</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="interface">Effect</li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="abstract_method">
+            <a href="Spit.Transitions.Effect.advance.html">advance</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Transitions.Effect.cancel.html">cancel</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Transitions.Effect.get_fps.html">get_fps</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Transitions.Effect.needs_clear_background.html">needs_clear_background</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Transitions.Effect.paint.html">paint</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Transitions.Effect.start.html">start</a></li>
+        </ul>
+      </div>
+      <div class="site_content">
+        <h1 class="main_title">Effect</h1>
+        <hr class="main_hr"/>
+        <h2 class="main_title">Object Hierarchy:</h2>
+        <img class="main_diagram" usemap="#Spit.Transitions.Effect" alt="Object hierarchy for Effect" src="img/Spit.Transitions.Effect.png"/>
+<map id="Spit.Transitions.Effect" name="Spit.Transitions.Effect">
+<area shape="rect" id="node1" href="Spit.Transitions.Effect.html" title="Spit.Transitions.Effect" alt="" coords="5,101,192,149"/>
+</map>
+
+        <h2 class="main_title">Description:</h2>
+        <div class="main_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">interface</span> <b><a href="Spit.Transitions.Effect.html" class="interface">Effect</a></b> : <span class="main_type"><code>Object</code></span>
+        </div>
+        <div class="description">
+          <p>An Effect represents an interstitial effect that is used to transition the display from one  image to another. </p>
+          <p>An Effect must hold state so that it knows what it should be drawn at any call to 
+            <a href="Spit.Transitions.Effect.paint.html" class="abstract_method">paint</a> (which is called regularly during a transition). That is, 
+            it should be able to draw any frame of the transition at any time. The same frame may need to be drawn multiple times, or the host may 
+            skip ahead and ask for a frame well ahead of the last requested one. </p>
+          <p>
+            <b>Frame numbers are one-based throughout this interface</b>. This is because the initial state (the blank viewport or the starting 
+            pixbuf) is frame zero. The Effect is never called to paint this frame.  The Effect is also not called to paint the final frame (a blank 
+            viewport or the ending pixbuf). </p>
+          <p>If the Effect uses background threads for its work, it should use the appropriate primitives for critical sections. All calls to this 
+            interface will be from the context of the main UI thread. <b>None of these calls should block.</b> </p>
+          <p>If the Details object needs to be held by the Effect, its reference to it should be dropped at the end of the cycle (or shortly 
+            thereafter). </p>
+          <p>An instance may be reused and should be prepared for restarts. </p>
+        </div>
+        <br/>
+        <div class="namespace_note">
+          <b>Namespace:</b> Spit.Transitions</div>
+        <div class="package_note">
+          <b>Package:</b> shotwell-plugin-dev</div>
+        <h2 class="main_title">Content:</h2>
+        <h3 class="main_title">Methods:</h3>
+        <ul class="navi_inline">
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_keyword">void</span> <b><a href="Spit.Transitions.Effect.get_fps.html" class="abstract_method">get_fps</a></b> (<span class="main_keyword">out</span> <span class="main_basic_type"><code>int</code></span> desired_fps, <span class="main_keyword">out</span> <span class="main_basic_type"><code>int</code></span> min_fps)
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Returns frames per second (FPS) information for this effect. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_keyword">void</span> <b><a href="Spit.Transitions.Effect.start.html" class="abstract_method">start</a></b> (<span class="main_type"><a href="Spit.Transitions.Visuals.html" class="class">Visuals</a></span> visuals, <span class="main_type"><a href="Spit.Transitions.Motion.html" class="class">Motion</a></span> motion)
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Called when the effect is starting. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_basic_type"><code>bool</code></span> <b><a href="Spit.Transitions.Effect.needs_clear_background.html" class="abstract_method">needs_clear_background</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Return true if the Effect needs the background cleared prior to calling 
+                <a href="Spit.Transitions.Effect.paint.html" class="abstract_method">paint</a>. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_keyword">void</span> <b><a href="Spit.Transitions.Effect.paint.html" class="abstract_method">paint</a></b> (<span class="main_type"><a href="Spit.Transitions.Visuals.html" class="class">Visuals</a></span> visuals, <span class="main_type"><a href="Spit.Transitions.Motion.html" class="class">Motion</a></span> motion, <span class="main_type"><code>Context</code></span> ctx, <span class="main_basic_type"><code>int</code></span> width, <span class="main_basic_type"><code>int</code></span> height, <span class="main_basic_type"><code>int</code></span> frame_number)
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Called when the effect needs to paint (i.e. an expose or draw event has occurred). </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_keyword">void</span> <b><a href="Spit.Transitions.Effect.advance.html" class="abstract_method">advance</a></b> (<span class="main_type"><a href="Spit.Transitions.Visuals.html" class="class">Visuals</a></span> visuals, <span class="main_type"><a href="Spit.Transitions.Motion.html" class="class">Motion</a></span> motion, <span class="main_basic_type"><code>int</code></span> frame_number)
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Called to notify the effect that the state of the transition should advance to the specified frame 
+                number. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_keyword">void</span> <b><a href="Spit.Transitions.Effect.cancel.html" class="abstract_method">cancel</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Called if the Effect should halt the transition. </span>
+            </div></li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+    <div class="site_footer">Generated by <a href="http://www.valadoc.org/">Valadoc</a>
+    </div>
+  </body>
+</html>

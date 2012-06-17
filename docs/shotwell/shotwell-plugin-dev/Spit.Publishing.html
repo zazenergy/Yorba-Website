@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <title>Vala Binding Reference</title>
+    <link href="../style.css" rel="stylesheet" type="text/css"/>
+    <script src="../scripts.js" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <div class="site_header">Spit.Publishing Reference Manual</div>
+    <div class="site_body">
+      <div class="site_navigation">
+        <ul class="navi_main">
+          <li class="package_index">
+            <a href="../index.html">Packages</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="package">
+            <a href="index.htm">shotwell-plugin-dev</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="namespace">
+            <a href="Spit.html">Spit</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="namespace">Publishing</li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="interface">
+            <a href="Spit.Publishing.DialogPane.html">DialogPane</a></li>
+          <li class="interface">
+            <a href="Spit.Publishing.PluginHost.html">PluginHost</a></li>
+          <li class="interface">
+            <a href="Spit.Publishing.Publishable.html">Publishable</a></li>
+          <li class="interface">
+            <a href="Spit.Publishing.Publisher.html">Publisher</a></li>
+          <li class="interface">
+            <a href="Spit.Publishing.Service.html">Service</a></li>
+          <li class="constant">
+            <a href="Spit.Publishing.CURRENT_INTERFACE.html">CURRENT_INTERFACE</a></li>
+          <li class="delegate">
+            <a href="Spit.Publishing.LoginCallback.html">LoginCallback</a></li>
+          <li class="delegate">
+            <a href="Spit.Publishing.ProgressCallback.html">ProgressCallback</a></li>
+        </ul>
+      </div>
+      <div class="site_content">
+        <h1 class="main_title">Spit.Publishing</h1>
+        <hr class="main_hr"/>
+        <h2 class="main_title">Description:</h2>
+        <div class="description">
+          <p>Shotwell Pluggable Publishing API </p>
+          <p>The Shotwell Pluggable Publishing API allows you to write plugins that upload photos and videos to web services. The Shotwell 
+            distribution includes publishing support for four core services: Facebook, Flickr, Picasa Web Albums, and YouTube. To enable Shotwell to 
+            connect to additional services, developers like you write publishing plugins, dynamically-loadable shared objects that are linked into the
+             Shotwell process at runtime. Publishing plugins are just one of several kinds of plugins supported by 
+            <a href="Spit.html" class="namespace">Spit</a>, the Shotwell Pluggable Interfaces Technology. </p>
+        </div>
+        <h2 class="main_title">Content:</h2>
+        <h3 class="main_title">Interfaces:</h3>
+        <ul class="navi_inline">
+          <li class="interface">
+            <a href="Spit.Publishing.Publisher.html">Publisher</a> - <span class="brief_description">Represents a connection to a publishing service. 
+            </span></li>
+          <li class="interface">
+            <a href="Spit.Publishing.DialogPane.html">DialogPane</a> - <span class="brief_description">Encapsulates a pane that can be installed in 
+              the on-screen publishing dialog box to communicate status to and to get information from the user. </span></li>
+          <li class="interface">
+            <a href="Spit.Publishing.PluginHost.html">PluginHost</a> - <span class="brief_description">Manages and provides services for publishing 
+              plugins. </span></li>
+          <li class="interface">
+            <a href="Spit.Publishing.Publishable.html">Publishable</a> - <span class="brief_description">Describes an underlying media item (such as a
+              photo or a video) that your plugin uploads to a remote publishing service. </span></li>
+          <li class="interface">
+            <a href="Spit.Publishing.Service.html">Service</a> - <span class="brief_description">Describes the features and capabilities of a remote 
+              publishing service. </span></li>
+        </ul>
+        <h3 class="main_title">Error domains:</h3>
+        <ul class="navi_inline">
+          <li class="errordomain">
+            <a href="Spit.Publishing.PublishingError.html">PublishingError</a> - <span class="brief_description">Defines different kinds of errors 
+              that can occur during publishing. </span></li>
+        </ul>
+        <h3 class="main_title">Constants:</h3>
+        <ul class="navi_inline">
+          <li class="constant">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">const</span> <span class="main_basic_type"><code>int</code></span> <b><a href="Spit.Publishing.CURRENT_INTERFACE.html" class="constant">CURRENT_INTERFACE</a></b>
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">The current version of the Pluggable Publishing API </span>
+            </div></li>
+        </ul>
+        <h3 class="main_title">Delegates:</h3>
+        <ul class="navi_inline">
+          <li class="delegate">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">void</span> <b><a href="Spit.Publishing.ProgressCallback.html" class="delegate">ProgressCallback</a></b> (<span class="main_basic_type"><code>int</code></span> file_number, <span class="main_basic_type"><code>double</code></span> fraction_complete)
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Enables its caller to report to the user on the progress of a publishing operation. </span>
+            </div></li>
+          <li class="delegate">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">void</span> <b><a href="Spit.Publishing.LoginCallback.html" class="delegate">LoginCallback</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Called by the publishing system when the user clicks the 'Login' button in a service welcome pane. 
+              </span>
+            </div></li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+    <div class="site_footer">Generated by <a href="http://www.valadoc.org/">Valadoc</a>
+    </div>
+  </body>
+</html>

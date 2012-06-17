@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <title>Vala Binding Reference</title>
+    <link href="../style.css" rel="stylesheet" type="text/css"/>
+    <script src="../scripts.js" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <div class="site_header">Spit.EntryPointParams Reference Manual</div>
+    <div class="site_body">
+      <div class="site_navigation">
+        <ul class="navi_main">
+          <li class="package_index">
+            <a href="../index.html">Packages</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="package">
+            <a href="index.htm">shotwell-plugin-dev</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="namespace">
+            <a href="Spit.html">Spit</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="struct">EntryPointParams</li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="field">
+            <a href="Spit.EntryPointParams.host_max_spit_interface.html">host_max_spit_interface</a></li>
+          <li class="field">
+            <a href="Spit.EntryPointParams.host_min_spit_interface.html">host_min_spit_interface</a></li>
+          <li class="field">
+            <a href="Spit.EntryPointParams.module_file.html">module_file</a></li>
+          <li class="field">
+            <a href="Spit.EntryPointParams.module_spit_interface.html">module_spit_interface</a></li>
+        </ul>
+      </div>
+      <div class="site_content">
+        <h1 class="main_title">EntryPointParams</h1>
+        <hr class="main_hr"/>
+        <h2 class="main_title">Object Hierarchy:</h2>
+        <img class="main_diagram" usemap="#Spit.EntryPointParams" alt="Object hierarchy for EntryPointParams" src="img/Spit.EntryPointParams.png"/>
+<map id="Spit.EntryPointParams" name="Spit.EntryPointParams">
+<area shape="rect" id="node1" href="Spit.EntryPointParams.html" title="Spit.EntryPointParams" alt="" coords="5,5,192,53"/>
+</map>
+
+        <h2 class="main_title">Description:</h2>
+        <div class="main_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">struct</span> <b><a href="Spit.EntryPointParams.html" class="struct">EntryPointParams</a></b>
+        </div>
+        <div class="description">
+          <p>SPIT entry point parameters. </p>
+          <p>The host application passes a pointer to this structure for the module's information. The pointer should <i>not</i> be held, as it may be
+            freed or reused by the host application after calling the entry point. The module should copy any information it may need (or hold a 
+            GObject reference) in its own memory space. </p>
+          <p>Note that the module <i>must</i> fill in the module_spit_interface field with the SPIT interface version it understands prior to 
+            returning control. </p>
+        </div>
+        <br/>
+        <div class="namespace_note">
+          <b>Namespace:</b> Spit</div>
+        <div class="package_note">
+          <b>Package:</b> shotwell-plugin-dev</div>
+        <h2 class="main_title">Content:</h2>
+        <h3 class="main_title">Fields:</h3>
+        <ul class="navi_inline">
+          <li class="field">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_basic_type"><code>int</code></span> <b><a href="Spit.EntryPointParams.host_min_spit_interface.html" class="field">host_min_spit_interface</a></b>
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">The host's minimum supported interface version. </span>
+            </div></li>
+          <li class="field">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_basic_type"><code>int</code></span> <b><a href="Spit.EntryPointParams.host_max_spit_interface.html" class="field">host_max_spit_interface</a></b>
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">The host's maximum supported interface version. </span>
+            </div></li>
+          <li class="field">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_basic_type"><code>int</code></span> <b><a href="Spit.EntryPointParams.module_spit_interface.html" class="field">module_spit_interface</a></b>
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">The module returns here the interface version of SPIT it supports, 
+                <a href="Spit.UNSUPPORTED_INTERFACE.html" class="constant">UNSUPPORTED_INTERFACE</a> otherwise. </span>
+            </div></li>
+          <li class="field">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_type"><code>File</code></span> <b><a href="Spit.EntryPointParams.module_file.html" class="field">module_file</a></b>
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">A File object representing the library file (.so/la.) that the plugin was loaded from. </span>
+            </div></li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+    <div class="site_footer">Generated by <a href="http://www.valadoc.org/">Valadoc</a>
+    </div>
+  </body>
+</html>

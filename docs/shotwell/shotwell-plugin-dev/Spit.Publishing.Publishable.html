@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <title>Vala Binding Reference</title>
+    <link href="../style.css" rel="stylesheet" type="text/css"/>
+    <script src="../scripts.js" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <div class="site_header">Spit.Publishing.Publishable Reference Manual</div>
+    <div class="site_body">
+      <div class="site_navigation">
+        <ul class="navi_main">
+          <li class="package_index">
+            <a href="../index.html">Packages</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="package">
+            <a href="index.htm">shotwell-plugin-dev</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="namespace">
+            <a href="Spit.html">Spit</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="namespace">
+            <a href="Spit.Publishing.html">Publishing</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="interface">Publishable</li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="abstract_method">
+            <a href="Spit.Publishing.Publishable.get_exposure_date_time.html">get_exposure_date_time</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.Publishable.get_media_type.html">get_media_type</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.Publishable.get_publishing_description.html">get_publishing_description</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.Publishable.get_publishing_keywords.html">get_publishing_keywords</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.Publishable.get_publishing_name.html">get_publishing_name</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.Publishable.get_serialized_file.html">get_serialized_file</a></li>
+        </ul>
+      </div>
+      <div class="site_content">
+        <h1 class="main_title">Publishable</h1>
+        <hr class="main_hr"/>
+        <h2 class="main_title">Object Hierarchy:</h2>
+        
+        <img class="main_diagram" usemap="#Spit.Publishing.Publishable" alt="Object hierarchy for Publishable" src="img/Spit.Publishing.Publishable.png"/>
+<map id="Spit.Publishing.Publishable" name="Spit.Publishing.Publishable">
+<area shape="rect" id="node1" href="Spit.Publishing.Publishable.html" title="Spit.Publishing.Publishable" alt="" coords="5,101,227,149"/>
+</map>
+
+        <h2 class="main_title">Description:</h2>
+        <div class="main_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">interface</span> <b><a href="Spit.Publishing.Publishable.html" class="interface">Publishable</a></b> : <span class="main_type"><code>Object</code></span>
+        </div>
+        <div class="description">
+          <p>Describes an underlying media item (such as a photo or a video) that your plugin uploads to a remote publishing service. </p>
+        </div>
+        <br/>
+        <div class="namespace_note">
+          <b>Namespace:</b> Spit.Publishing</div>
+        <div class="package_note">
+          <b>Package:</b> shotwell-plugin-dev</div>
+        <h2 class="main_title">Content:</h2>
+        <h3 class="main_title">Methods:</h3>
+        <ul class="navi_inline">
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_type"><code>File</code></span>? <b><a href="Spit.Publishing.Publishable.get_serialized_file.html" class="abstract_method">get_serialized_file</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Returns a handle to the file on disk to which this publishable's data has been serialized. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_basic_type"><code>string</code></span> <b><a href="Spit.Publishing.Publishable.get_publishing_name.html" class="abstract_method">get_publishing_name</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Returns a name that can be used to identify this publishable to the remote service. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_basic_type"><code>string</code></span>? <b><a href="Spit.Publishing.Publishable.get_publishing_description.html" class="abstract_method">get_publishing_description</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Returns descriptive text that describes this publishable to the remote service, or null if this 
+                publishable has no description. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_basic_type"><code>string</code></span>[] <b><a href="Spit.Publishing.Publishable.get_publishing_keywords.html" class="abstract_method">get_publishing_keywords</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Returns an array of strings that should be used to tag or mark this publishable on the remote service, 
+                or null if this publishable has no tags or markings. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_type"><a href="Spit.Publishing.Publisher.MediaType.html" class="enum">MediaType</a></span> <b><a href="Spit.Publishing.Publishable.get_media_type.html" class="abstract_method">get_media_type</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Returns the kind of media item this publishable encapsulates. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_type"><code>DateTime</code></span> <b><a href="Spit.Publishing.Publishable.get_exposure_date_time.html" class="abstract_method">get_exposure_date_time</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Returns the creation timestamp on the file. </span>
+            </div></li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+    <div class="site_footer">Generated by <a href="http://www.valadoc.org/">Valadoc</a>
+    </div>
+  </body>
+</html>

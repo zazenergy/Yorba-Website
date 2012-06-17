@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <title>Vala Binding Reference</title>
+    <link href="../style.css" rel="stylesheet" type="text/css"/>
+    <script src="../scripts.js" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <div class="site_header">Spit.Publishing.Publisher Reference Manual</div>
+    <div class="site_body">
+      <div class="site_navigation">
+        <ul class="navi_main">
+          <li class="package_index">
+            <a href="../index.html">Packages</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="package">
+            <a href="index.htm">shotwell-plugin-dev</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="namespace">
+            <a href="Spit.html">Spit</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="namespace">
+            <a href="Spit.Publishing.html">Publishing</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="interface">Publisher</li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="enum">
+            <a href="Spit.Publishing.Publisher.MediaType.html">MediaType</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.Publisher.get_service.html">get_service</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.Publisher.is_running.html">is_running</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.Publisher.start.html">start</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.Publisher.stop.html">stop</a></li>
+        </ul>
+      </div>
+      <div class="site_content">
+        <h1 class="main_title">Publisher</h1>
+        <hr class="main_hr"/>
+        <h2 class="main_title">Object Hierarchy:</h2>
+        <img class="main_diagram" usemap="#Spit.Publishing.Publisher" alt="Object hierarchy for Publisher" src="img/Spit.Publishing.Publisher.png"/>
+<map id="Spit.Publishing.Publisher" name="Spit.Publishing.Publisher">
+<area shape="rect" id="node1" href="Spit.Publishing.Publisher.html" title="Spit.Publishing.Publisher" alt="" coords="5,101,211,149"/>
+</map>
+
+        <h2 class="main_title">Description:</h2>
+        <div class="main_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">interface</span> <b><a href="Spit.Publishing.Publisher.html" class="interface">Publisher</a></b> : <span class="main_type"><code>Object</code></span>
+        </div>
+        <div class="description">
+          <p>Represents a connection to a publishing service. </p>
+          <p>Developers of publishing plugins provide a class that implements this interface. At any given time, only one Publisher can be running. 
+            When a publisher is running, it is allowed to access the network and has exclusive use of the shared user-interface and configuration 
+            services provided by the <a href="Spit.Publishing.PluginHost.html" class="interface">PluginHost</a>. Publishers are created in a non-
+            running state and do not begin running until start( ) is invoked. Publishers run until stop( ) is invoked. </p>
+        </div>
+        <br/>
+        <div class="namespace_note">
+          <b>Namespace:</b> Spit.Publishing</div>
+        <div class="package_note">
+          <b>Package:</b> shotwell-plugin-dev</div>
+        <h2 class="main_title">Content:</h2>
+        <h3 class="main_title">Enums:</h3>
+        <ul class="navi_inline">
+          <li class="enum">
+            <a href="Spit.Publishing.Publisher.MediaType.html">MediaType</a> - <span class="brief_description">Describes the kinds of media a 
+              publishing service supports. </span></li>
+        </ul>
+        <h3 class="main_title">Methods:</h3>
+        <ul class="navi_inline">
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_type"><a href="Spit.Publishing.Service.html" class="interface">Service</a></span> <b><a href="Spit.Publishing.Publisher.get_service.html" class="abstract_method">get_service</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Returns a <a href="Spit.Publishing.Service.html" class="interface">Service</a> object describing the 
+                service to which this connects. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_keyword">void</span> <b><a href="Spit.Publishing.Publisher.start.html" class="abstract_method">start</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Makes this publisher enter the running state and endows it with exclusive access to the shared services 
+                provided by the <a href="Spit.Publishing.PluginHost.html" class="interface">PluginHost</a>. Through the host’s interface, this 
+                publisher can install user interface panes and query configuration information. Only running services should perform network 
+                operations. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_basic_type"><code>bool</code></span> <b><a href="Spit.Publishing.Publisher.is_running.html" class="abstract_method">is_running</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Returns true if this publisher is in the running state; false otherwise. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_keyword">void</span> <b><a href="Spit.Publishing.Publisher.stop.html" class="abstract_method">stop</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Causes this publisher to enter a non-running state. This publisher should stop all network operations 
+                and cease use of the shared services provided by the <a href="Spit.Publishing.PluginHost.html" class="interface">PluginHost</a>. 
+              </span>
+            </div></li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+    <div class="site_footer">Generated by <a href="http://www.valadoc.org/">Valadoc</a>
+    </div>
+  </body>
+</html>

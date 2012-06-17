@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <title>Vala Binding Reference</title>
+    <link href="../style.css" rel="stylesheet" type="text/css"/>
+    <script src="../scripts.js" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <div class="site_header">Spit.Transitions.Visuals Reference Manual</div>
+    <div class="site_body">
+      <div class="site_navigation">
+        <ul class="navi_main">
+          <li class="package_index">
+            <a href="../index.html">Packages</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="package">
+            <a href="index.htm">shotwell-plugin-dev</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="namespace">
+            <a href="Spit.html">Spit</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="namespace">
+            <a href="Spit.Transitions.html">Transitions</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="class">Visuals</li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="property">
+            <a href="Spit.Transitions.Visuals.bg_color.html">bg_color</a></li>
+          <li class="property">
+            <a href="Spit.Transitions.Visuals.from_pixbuf.html">from_pixbuf</a></li>
+          <li class="property">
+            <a href="Spit.Transitions.Visuals.from_pos.html">from_pos</a></li>
+          <li class="property">
+            <a href="Spit.Transitions.Visuals.to_pixbuf.html">to_pixbuf</a></li>
+          <li class="property">
+            <a href="Spit.Transitions.Visuals.to_pos.html">to_pos</a></li>
+          <li class="creation_method">
+            <a href="Spit.Transitions.Visuals.Visuals.html">Visuals</a></li>
+        </ul>
+      </div>
+      <div class="site_content">
+        <h1 class="main_title">Visuals</h1>
+        <hr class="main_hr"/>
+        <h2 class="main_title">Object Hierarchy:</h2>
+        <img class="main_diagram" usemap="#Spit.Transitions.Visuals" alt="Object hierarchy for Visuals" src="img/Spit.Transitions.Visuals.png"/>
+<map id="Spit.Transitions.Visuals" name="Spit.Transitions.Visuals">
+<area shape="rect" id="node1" href="Spit.Transitions.Visuals.html" title="Spit.Transitions.Visuals" alt="" coords="5,101,200,149"/>
+</map>
+
+        <h2 class="main_title">Description:</h2>
+        <div class="main_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">class</span> <b><a href="Spit.Transitions.Visuals.html" class="class">Visuals</a></b> : <span class="main_type"><code>Object</code></span>
+        </div>
+        <div class="description">
+          <p>Visuals contains the pertinent drawing information for the transition that must occur. </p>
+          <p>A Visuals object is supplied to <a href="Spit.Transitions.Effect.html" class="interface">Effect</a> at the start of the transition and 
+            during each  call to paint to the screen. </p>
+          <p>Note that if starting with a blank screen, from_pixbuf will be null and from_pos will be zeroed. The transition should be considered to 
+            start from a blank screen of the supplied background color. </p>
+          <p>Also note that if transitioning to a blank screen, to_pixbuf will be null and to_pos will be zeroed. Like the prior case, the transition 
+            should move toward a blank screen of the background color. </p>
+        </div>
+        <br/>
+        <div class="namespace_note">
+          <b>Namespace:</b> Spit.Transitions</div>
+        <div class="package_note">
+          <b>Package:</b> shotwell-plugin-dev</div>
+        <h2 class="main_title">Content:</h2>
+        <h3 class="main_title">Properties:</h3>
+        <ul class="navi_inline">
+          <li class="property">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_type"><code>Pixbuf</code></span>? <b><a href="Spit.Transitions.Visuals.from_pixbuf.html" class="property">from_pixbuf</a></b> { <span class="main_keyword">get</span>; }
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Returns the starting pixbuf (the pixbuf currently on the display). </span>
+            </div></li>
+          <li class="property">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_type"><code>Rectangle</code></span> <b><a href="Spit.Transitions.Visuals.from_pos.html" class="property">from_pos</a></b> { <span class="main_keyword">get</span>; }
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Returns the position of the starting pixbuf on the display. </span>
+            </div></li>
+          <li class="property">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_type"><code>Pixbuf</code></span>? <b><a href="Spit.Transitions.Visuals.to_pixbuf.html" class="property">to_pixbuf</a></b> { <span class="main_keyword">get</span>; }
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Returns the ending pixbuf (the pixbuf that the transition should result in). </span>
+            </div></li>
+          <li class="property">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_type"><code>Rectangle</code></span> <b><a href="Spit.Transitions.Visuals.to_pos.html" class="property">to_pos</a></b> { <span class="main_keyword">get</span>; }
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Returns the position of the ending pixbuf on the display. </span>
+            </div></li>
+          <li class="property">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_type"><code>Color</code></span> <b><a href="Spit.Transitions.Visuals.bg_color.html" class="property">bg_color</a></b> { <span class="main_keyword">get</span>; }
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Returns the background color of the viewport. </span>
+            </div></li>
+        </ul>
+        <h3 class="main_title">Creation methods:</h3>
+        <ul class="navi_inline">
+          <li class="creation_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <b><a href="Spit.Transitions.Visuals.Visuals.html" class="creation_method">Visuals</a></b> (<span class="main_type"><code>Pixbuf</code></span>? from_pixbuf, <span class="main_type"><code>Rectangle</code></span> from_pos, <span class="main_type"><code>Pixbuf</code></span>? to_pixbuf, <span class="main_type"><code>Rectangle</code></span> to_pos, <span class="main_type"><code>Color</code></span> bg_color)
+            </span>
+            <div class="leaf_brief_description">
+            </div></li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+    <div class="site_footer">Generated by <a href="http://www.valadoc.org/">Valadoc</a>
+    </div>
+  </body>
+</html>

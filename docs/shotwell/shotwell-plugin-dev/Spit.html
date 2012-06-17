@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <title>Vala Binding Reference</title>
+    <link href="../style.css" rel="stylesheet" type="text/css"/>
+    <script src="../scripts.js" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <div class="site_header">Spit Reference Manual</div>
+    <div class="site_body">
+      <div class="site_navigation">
+        <ul class="navi_main">
+          <li class="package_index">
+            <a href="../index.html">Packages</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="package">
+            <a href="index.htm">shotwell-plugin-dev</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="namespace">Spit</li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="namespace">
+            <a href="Spit.Publishing.html">Publishing</a></li>
+          <li class="namespace">
+            <a href="Spit.Transitions.html">Transitions</a></li>
+          <li class="interface">
+            <a href="Spit.HostInterface.html">HostInterface</a></li>
+          <li class="interface">
+            <a href="Spit.Module.html">Module</a></li>
+          <li class="interface">
+            <a href="Spit.Pluggable.html">Pluggable</a></li>
+          <li class="struct">
+            <a href="Spit.EntryPointParams.html">EntryPointParams</a></li>
+          <li class="struct">
+            <a href="Spit.PluggableInfo.html">PluggableInfo</a></li>
+          <li class="constant">
+            <a href="Spit.CURRENT_INTERFACE.html">CURRENT_INTERFACE</a></li>
+          <li class="constant">
+            <a href="Spit.ENTRY_POINT_NAME.html">ENTRY_POINT_NAME</a></li>
+          <li class="constant">
+            <a href="Spit.UNSUPPORTED_INTERFACE.html">UNSUPPORTED_INTERFACE</a></li>
+          <li class="delegate">
+            <a href="Spit.EntryPoint.html">EntryPoint</a></li>
+          <li class="static_method">
+            <a href="Spit.negotiate_interfaces.html">negotiate_interfaces</a></li>
+        </ul>
+      </div>
+      <div class="site_content">
+        <h1 class="main_title">Spit</h1>
+        <hr class="main_hr"/>
+        <h2 class="main_title">Description:</h2>
+        <div class="description">
+          <p>Shotwell Pluggable Interface Technology (SPIT) </p>
+          <p>This is the front-end interface for all modules (i.e. .so/.la files) that allows for Shotwell to query them for information and to get a 
+            list of all plug-ins stored in the module. This is named Shotwell Pluggable Interface Technology (SPIT). This is intended only to last 
+            long enough for another generic plug-in library (most likely Peas) to be used later. </p>
+          <p>The Spit namespace is used for all interfaces and code that are made available to plugins or are exposed by plugins. </p>
+          <p>More information can be found at <a href="http://trac.yorba.org/wiki/ShotwellArchWritingPlugins">
+              http://trac.yorba.org/wiki/ShotwellArchWritingPlugins</a> </p>
+        </div>
+        <h2 class="main_title">Content:</h2>
+        <h3 class="main_title">Namespaces:</h3>
+        <ul class="navi_inline">
+          <li class="namespace">
+            <a href="Spit.Transitions.html">Transitions</a>
+            <span class="brief_description">Transitions are used in Shotwell for interstitial effects in slideshow mode. They may also be used 
+              elsewhere in future releases. </span></li>
+          <li class="namespace">
+            <a href="Spit.Publishing.html">Publishing</a>
+            <span class="brief_description">Shotwell Pluggable Publishing API </span></li>
+        </ul>
+        <h3 class="main_title">Interfaces:</h3>
+        <ul class="navi_inline">
+          <li class="interface">
+            <a href="Spit.Module.html">Module</a> - <span class="brief_description">A Module represents the resources of an entire dynamically-linked 
+              module (i.e. a .so/.la). </span></li>
+          <li class="interface">
+            <a href="Spit.Pluggable.html">Pluggable</a> - <span class="brief_description">A generic interface to all Shotwell plugins. </span></li>
+          <li class="interface">
+            <a href="Spit.HostInterface.html">HostInterface</a> - <span class="brief_description">An interface to common services supplied by the host
+              (Shotwell). </span></li>
+        </ul>
+        <h3 class="main_title">Structs:</h3>
+        <ul class="navi_inline">
+          <li class="struct">
+            <a href="Spit.EntryPointParams.html">EntryPointParams</a> - <span class="brief_description">SPIT entry point parameters. </span></li>
+          <li class="struct">
+            <a href="Spit.PluggableInfo.html">PluggableInfo</a> - <span class="brief_description">A structure holding an assortment of information 
+              about a <a href="Spit.Pluggable.html" class="interface">Pluggable</a>. </span></li>
+        </ul>
+        <h3 class="main_title">Constants:</h3>
+        <ul class="navi_inline">
+          <li class="constant">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">const</span> <span class="main_basic_type"><code>int</code></span> <b><a href="Spit.UNSUPPORTED_INTERFACE.html" class="constant">UNSUPPORTED_INTERFACE</a></b>
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Reserved interface value denoting an unsupported interface version. </span>
+            </div></li>
+          <li class="constant">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">const</span> <span class="main_basic_type"><code>int</code></span> <b><a href="Spit.CURRENT_INTERFACE.html" class="constant">CURRENT_INTERFACE</a></b>
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Current version of the SPIT interface. </span>
+            </div></li>
+          <li class="constant">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">const</span> <span class="main_keyword">unowned</span> <span class="main_basic_type"><code>string</code></span> <b><a href="Spit.ENTRY_POINT_NAME.html" class="constant">ENTRY_POINT_NAME</a></b>
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">SPIT entry point name, which matches <a href="Spit.EntryPoint.html" class="delegate">EntryPoint</a>'s 
+                interface </span>
+            </div></li>
+        </ul>
+        <h3 class="main_title">Delegates:</h3>
+        <ul class="navi_inline">
+          <li class="delegate">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">static</span> <span class="main_type"><a href="Spit.Module.html" class="interface">Module</a></span>? <b><a href="Spit.EntryPoint.html" class="delegate">EntryPoint</a></b> (<span class="main_type"><a href="Spit.EntryPointParams.html" class="struct">EntryPointParams</a></span>* params)
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">SPIT API entry point. </span>
+            </div></li>
+        </ul>
+        <h3 class="main_title">Functions:</h3>
+        <ul class="navi_inline">
+          <li class="static_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">static</span> <span class="main_basic_type"><code>int</code></span> <b><a href="Spit.negotiate_interfaces.html" class="static_method">negotiate_interfaces</a></b> (<span class="main_basic_type"><code>int</code></span> min_host_interface, <span class="main_basic_type"><code>int</code></span> max_host_interface, <span class="main_basic_type"><code>int</code></span> plugin_interface)
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">A utility function for checking host interfaces against one's own and returning the right value. </span>
+            </div></li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+    <div class="site_footer">Generated by <a href="http://www.valadoc.org/">Valadoc</a>
+    </div>
+  </body>
+</html>

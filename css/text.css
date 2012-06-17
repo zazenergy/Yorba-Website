@@ -48,7 +48,7 @@ p a {
 
 a:link {
     color: #4A58A1;
-    text-shadow:#fff 0px 1px 0;
+    text-shadow:rgba(255,255,255,1) 0px 1px 0;
 }
 
 a:visited {
@@ -130,7 +130,8 @@ p {
 }
 /* `Header, Footer, Mission----------------------------------------------------------------------------------------------------*/
 
-.navigation li {
+
+.navigation li{
 	float: left;
 	list-style: none;
 	font-family: 'Gudea', Arial, sans-serif;
@@ -175,7 +176,7 @@ p {
 	border-top-color: black;
 	margin-bottom: 30px; 
 	padding-top: 20px;
-	padding-bottom: 40px;
+	padding-bottom: 10px;
 	color: #636669;
 	background: #FFFFFF;
 	text-align: left;	
@@ -219,17 +220,63 @@ p {
 }
 
 .shotwell_photo {
-	background-image: url(/images/harbor.png)
+	background-image:url(/images/shotwell/codagrey.png);
+    background-repeat: repeat;
 
 }
 
+.shotwell_image {
+	box-shadow: 3px 3px 2px #949191;
+	
+}
+
+
 .shotwell_install_photo {
 	background-image: url(/images/fireworks.png)
+}
 
+.shotwell_callout h1{
+	color: #3d3d46;
+	position: relative;  
+    font-size: 75px;   
+    font-family: 'Open Sans', sans-serif; 
+    text-shadow: 2px 2px 2px #5b6c72;  
+    letter-spacing: -2px;  
+    -webkit-text-stroke: 1px #3d3d46;  
+	
+}
+
+.shotwell_callout p{
+	color: rgba(45,44,53,0.75);
+	padding-left: 20px;
+}
+
+.shotwell_callout h2 {
+	color: #3d3d46; 
+    font-size: 50px;   
+    font-family: 'Open Sans', sans-serif; 
+    text-shadow: 2px 2px 2px #5b6c72;  
+    letter-spacing: -2px;  
+    -webkit-text-stroke: 1px #3d3d46;  
+	
+}
+
+.shotwell_callout h3{
+	font-size: 28px;
+	text-decoration: underline;
+}
+
+#shotwell_callout a{
+	color: #2f84c1;
+	text-shadow: 0.5px 0px 0px rgba(127,127,127,0.73);
 }
 
 .geary_install_photo {
 	background-image: url(/images/geary/geary_main.png)
+}
+
+#jobmonster {
+	margin-top: 100px;
 }
 
 .myButton {
@@ -324,7 +371,7 @@ p {
 
 	
 .main_callout {
-	font-family: 'Norican', cursive;
+	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: 20px;
 	text-align: center;
 	padding-top: 40px;
@@ -355,6 +402,7 @@ p {
 	-moz-box-shadow:    2px 2px 2px 2px #ccc;
     -webkit-box-shadow: 2px 2px 2px 2px #ccc;
     box-shadow:         2px 2px 2px 2px #ccc;
+    font-weight: bold;
 }
 
 .callout h1 {
@@ -364,6 +412,7 @@ p {
 #geary_callout {
 	text-align: left;
 	margin-top: 30px;
+	
 }
 
 .center {
@@ -374,4 +423,53 @@ p {
 	padding-left: 20px;
 	margin-bottom: 20px;
 }
+
+#contribute_box {
+	background: white;
+	box-shadow: 3px 2px 1px black;
+}
+
+#backburner_callout {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	font-variant: normal;
+	
+}
+
+.shotwell_spacing {
+	padding-left: 50px;
+	
+}
+
+#install_bullets li{
+	list-style: none;
+}
+
+
+.shadow {
+	box-shadow: 3px 2px 1px black;
+}
+
+.navigation_shotwell ul li{
+	float: none;
+	list-style: none;
+	font-family: 'Gudea', Arial, sans-serif;
+	font-size: 18px;
+    margin-top: 15px;
+    color: blue;  
+}
+
+.vertical_line {
+   min-height: 300px;
+   border-left: 1px solid gray;
+   float:left;
+	
+}
+
+#news_alert p{
+	margin-top: -20px;
+	margin-bottom: 25px; 
+	}
+
 

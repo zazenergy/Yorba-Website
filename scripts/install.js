@@ -1,5 +1,4 @@
 $(document).ready(function() { 
-  $('input:radio:last-child').attr('checked',true);
   	$("input[name$='group1']").click(function(){
   		$("input[name$='group1'] p").remove();
   	
@@ -24,6 +23,8 @@ $(document).ready(function() {
 		    $("#ubuntu").hide();
 		    $("#fedora").hide();
 		   }
+		  
+		  $("#source").show();
   }); 
 });
 

@@ -1,0 +1,214 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Photo files</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page">
+<div class="header"><div class="trails"><div class="trail">
+<a class="trail" href="index.html" title="Shotwell">Shotwell</a> › <a class="trail" href="index.html#other" title="Other Features">Other Features</a> » </div></div></div>
+<div class="body">
+<div class="links nextlinks">
+<a class="nextlinks-prev" href="other-multiple.html" title="Multiple libraries">Previous</a>  |  <a class="nextlinks-next" href="other-plugins.html" title="Plugins">Next</a>
+</div>
+<div class="hgroup"><h1 class="title"><span class="title">Photo files</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">
+    Every photo in the Shotwell library corresponds to a file stored on your hard disk.  Shotwell has
+    several features which help you keep the Shotwell library and files on disk in sync.
+    </p>
+<div class="links sectionlinks"><div class="inner"><div class="region"><ul>
+<li class="links "><a href="other-files.html#dirpattern" title="Using a custom directory pattern">Using a custom directory pattern</a></li>
+<li class="links "><a href="other-files.html#automatic-import" title="Automatically importing photos">Automatically importing photos</a></li>
+<li class="links "><a href="other-files.html#automatic-rename" title="Automatically renaming imported photos to lowercase">Automatically renaming imported photos to lowercase</a></li>
+<li class="links "><a href="other-files.html#writing-metadata" title="Writing metadata on the fly">Writing metadata on the fly</a></li>
+<li class="links "><a href="other-files.html#runtime-monitoring" title="Runtime monitoring">Runtime monitoring</a></li>
+</ul></div></div></div>
+</div>
+<div id="dirpattern" class="sect"><div class="inner">
+<div class="hgroup"><h2 class="title"><span class="title">Using a custom directory pattern</span></h2></div>
+<div class="region"><div class="contents">
+<p class="p">
+            Shotwell allows you to specify how it names directories in your library.  You can do this 
+            by changing the <span class=" gui">Directory Structure</span> and <span class=" gui">Pattern</span> settings in the 
+            <span class=" gui">Preferences</span> dialog.  You may use a preselected pattern, or choose <span class=" gui">Custom</span> 
+            and type in your own.
+        </p>
+<p class="p">
+            The available symbols for the directory pattern begin with a % (percent sign). The values 
+            these symbols produce are locale-dependent, so what you see on your computer may vary
+            from the examples below.
+        </p>
+<div class="table"><div class="inner"><div class="region"><table class="table" style="border-style: solid;">
+<tbody><tr>
+<td><p class="p"> </p></td>
+<td><p class="p"><span class=" em">Symbol</span></p></td>
+<td><p class="p"><span class=" em">Meaning</span></p></td>
+<td><p class="p"><span class=" em">Example</span></p></td>
+</tr></tbody>
+<tbody>
+<tr>
+<td style="border-top-style: solid;"><p class="p"> </p></td>
+<td style="border-top-style: solid;"><p class="p"> %Y </p></td>
+<td style="border-top-style: solid;"><p class="p"> Year: full </p></td>
+<td style="border-top-style: solid;"><p class="p"> 2011 </p></td>
+</tr>
+<tr>
+<td><p class="p"> </p></td>
+<td><p class="p"> %y </p></td>
+<td><p class="p"> Year: two digit </p></td>
+<td><p class="p"> 11 </p></td>
+</tr>
+<tr>
+<td><p class="p"> </p></td>
+<td><p class="p"> %d </p></td>
+<td><p class="p"> Day of the month with leading zero </p></td>
+<td><p class="p"> 03 </p></td>
+</tr>
+<tr>
+<td><p class="p"> </p></td>
+<td><p class="p"> %A </p></td>
+<td><p class="p"> Day name: full </p></td>
+<td><p class="p"> Wednesday </p></td>
+</tr>
+<tr>
+<td><p class="p"> </p></td>
+<td><p class="p"> %a </p></td>
+<td><p class="p"> Day name: abbreviated </p></td>
+<td><p class="p"> Wed </p></td>
+</tr>
+<tr>
+<td><p class="p"> </p></td>
+<td><p class="p"> %m </p></td>
+<td><p class="p"> Month number with leading zero </p></td>
+<td><p class="p"> 02 </p></td>
+</tr>
+<tr>
+<td><p class="p"> </p></td>
+<td><p class="p"> %b </p></td>
+<td><p class="p"> Month name: abbreviated </p></td>
+<td><p class="p"> Feb 
+            
+            </p></td>
+</tr>
+<tr>
+<td><p class="p"> </p></td>
+<td><p class="p"> %B </p></td>
+<td><p class="p"> Month name: full </p></td>
+<td><p class="p"> February 
+            </p></td>
+</tr>
+<tr>
+<td><p class="p"> </p></td>
+<td><p class="p"> %I </p></td>
+<td><p class="p"> Hour: 12 hour format </p></td>
+<td><p class="p"> 05 
+            </p></td>
+</tr>
+<tr>
+<td><p class="p"> </p></td>
+<td><p class="p"> %H </p></td>
+<td><p class="p"> Hour: 24 hour format </p></td>
+<td><p class="p"> 17 
+            
+            </p></td>
+</tr>
+<tr>
+<td><p class="p"> </p></td>
+<td><p class="p"> %M </p></td>
+<td><p class="p"> Minute </p></td>
+<td><p class="p"> 16 
+            </p></td>
+</tr>
+<tr>
+<td><p class="p"> </p></td>
+<td><p class="p"> %S </p></td>
+<td><p class="p"> Second </p></td>
+<td><p class="p"> 30 
+            </p></td>
+</tr>
+<tr>
+<td><p class="p"> </p></td>
+<td><p class="p"> %p </p></td>
+<td><p class="p"> AM or PM </p></td>
+<td><p class="p"> PM </p></td>
+</tr>
+</tbody>
+</table></div></div></div>
+<p class="p">
+            There are other symbols available; please check the manual for strftime by running 
+            the command <span class=" cmd">man strftime</span> if you need one that isn't listed here.
+        </p>
+</div></div>
+</div></div>
+<div id="automatic-import" class="sect"><div class="inner">
+<div class="hgroup"><h2 class="title"><span class="title">Automatically importing photos</span></h2></div>
+<div class="region"><div class="contents">
+<p class="p">Shotwell can automatically import new photos which appear in the library directory.
+       (The library directory is usually the <span class=" file">Pictures</span> directory in your home directory;
+       you can change its location in in the <span class=" gui">Preferences</span> window.)
+       </p>
+<p class="p">To enable auto-import,
+       check the box <span class=" gui">Watch library directory for new files</span> in
+       the <span class=" gui">Preferences</span> window.</p>
+<div class="note note-advanced" title="Advanced"><div class="inner"><div class="region"><div class="contents"><p class="p">Shotwell can also follow symbolic links inside automatically-imported directories.</p></div></div></div></div>
+</div></div>
+</div></div>
+<div id="automatic-rename" class="sect"><div class="inner">
+<div class="hgroup"><h2 class="title"><span class="title">Automatically renaming imported photos to lowercase</span></h2></div>
+<div class="region"><div class="contents"><p class="p">
+       Shotwell can automatically change the filenames of imported photos
+       to lowercase.  To enable this, choose <span class=" guiseq"><span class=" gui">Edit</span> ▸ <span class=" gui">Preferences</span></span>,
+       and in the <span class=" gui">Preferences</span> window, check the <span class=" gui">Rename imported files to lowercase</span>
+       box.
+       </p></div></div>
+</div></div>
+<div id="writing-metadata" class="sect"><div class="inner">
+<div class="hgroup"><h2 class="title"><span class="title">Writing metadata on the fly</span></h2></div>
+<div class="region"><div class="contents">
+<p class="p">By default, Shotwell does not modify photo files, even when you edit photos or change their
+       tags or titles.  Shotwell records these changes in its own database only.</p>
+<p class="p">To change this behavior, you can enable the checkbox
+       <span class=" gui">Write tags, titles and other metadata to photo files</span>
+       in the <span class=" gui">Preferences</span> dialog.  When this option is enabled, Shotwell will write
+       the following metadata to most photo files whenever you change it in Shotwell:</p>
+<div class="list"><div class="inner"><div class="region"><ul class="list">
+<li class="list"><p class="p">titles</p></li>
+<li class="list"><p class="p">tags</p></li>
+<li class="list"><p class="p">ratings</p></li>
+<li class="list"><p class="p">rotation information</p></li>
+<li class="list"><p class="p">time/date</p></li>
+</ul></div></div></div>
+<p class="p">Shotwell stores this information in photo files in EXIF, IPTC and/or XMP format.  Note
+       that Shotwell can write only to photo files in JPEG, PNG and TIFF format, not to BMP photos, RAW photos
+       or to video files.  
+       </p>
+</div></div>
+</div></div>
+<div id="runtime-monitoring" class="sect"><div class="inner">
+<div class="hgroup"><h2 class="title"><span class="title">Runtime monitoring</span></h2></div>
+<div class="region"><div class="contents">
+<p class="p">While Shotwell is running, it notices changes made to any photo file externally.
+    When a photo file changes, Shotwell rereads the file and updates your view of the
+    photo and metadata.</p>
+<p class="p">Note that Shotwell checks all photo files for changes at startup, but only photo files contained in
+    the library directory are monitored in real time after startup.  We hope to remove this limitation
+    in a further release.</p>
+</div></div>
+</div></div>
+<div class="sect sect-links">
+<div class="hgroup"></div>
+<div class="contents"><div class="links seealsolinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html#other" title="Other Features">Other Features</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

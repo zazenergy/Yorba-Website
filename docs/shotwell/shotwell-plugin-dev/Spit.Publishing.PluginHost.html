@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <title>Vala Binding Reference</title>
+    <link href="../style.css" rel="stylesheet" type="text/css"/>
+    <script src="../scripts.js" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <div class="site_header">Spit.Publishing.PluginHost Reference Manual</div>
+    <div class="site_body">
+      <div class="site_navigation">
+        <ul class="navi_main">
+          <li class="package_index">
+            <a href="../index.html">Packages</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="package">
+            <a href="index.htm">shotwell-plugin-dev</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="namespace">
+            <a href="Spit.html">Spit</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="namespace">
+            <a href="Spit.Publishing.html">Publishing</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="interface">PluginHost</li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="enum">
+            <a href="Spit.Publishing.PluginHost.ButtonMode.html">ButtonMode</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.get_publishable_media_type.html">get_publishable_media_type</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.get_publishables.html">get_publishables</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.get_publisher.html">get_publisher</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.install_account_fetch_wait_pane.html">install_account_fetch_wait_pane</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.install_dialog_pane.html">install_dialog_pane</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.install_login_wait_pane.html">install_login_wait_pane</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.install_pango_message_pane.html">install_pango_message_pane</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.install_static_message_pane.html">install_static_message_pane</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.install_success_pane.html">install_success_pane</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.install_welcome_pane.html">install_welcome_pane</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.post_error.html">post_error</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.serialize_publishables.html">serialize_publishables</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.set_dialog_default_widget.html">set_dialog_default_widget</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.set_service_locked.html">set_service_locked</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.stop_publishing.html">stop_publishing</a></li>
+        </ul>
+      </div>
+      <div class="site_content">
+        <h1 class="main_title">PluginHost</h1>
+        <hr class="main_hr"/>
+        <h2 class="main_title">Object Hierarchy:</h2>
+        
+        <img class="main_diagram" usemap="#Spit.Publishing.PluginHost" alt="Object hierarchy for PluginHost" src="img/Spit.Publishing.PluginHost.png"/>
+<map id="Spit.Publishing.PluginHost" name="Spit.Publishing.PluginHost">
+<area shape="rect" id="node1" href="Spit.Publishing.PluginHost.html" title="Spit.Publishing.PluginHost" alt="" coords="31,101,249,149"/>
+<area shape="rect" id="node3" href="Spit.HostInterface.html" title="Spit.HostInterface" alt="" coords="141,5,296,53"/>
+</map>
+
+        <h2 class="main_title">Description:</h2>
+        <div class="main_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">interface</span> <b><a href="Spit.Publishing.PluginHost.html" class="interface">PluginHost</a></b> : <span class="main_type"><code>Object</code></span>, <span class="main_type"><a href="Spit.HostInterface.html" class="interface">HostInterface</a></span>
+        </div>
+        <div class="description">
+          <p>Manages and provides services for publishing plugins. </p>
+          <p>Implemented inside Shotwell, the PluginHost provides an interface through which the developers of publishing plugins can query and make 
+            changes to the publishing environment. For example, through the PluginHost, plugins can get a list of the photos and videos to be 
+            published, install and remove user-interface panes in the publishing dialog box, and request that the items to be uploaded be serialized 
+            to a temporary directory on disk. Plugins can use the services of the PluginHost only when their 
+            <a href="Spit.Publishing.Publisher.html" class="interface">Publisher</a> is in the running state. This ensures that non-running publishers
+             don’t destructively interfere with the actively running publisher. </p>
+        </div>
+        <br/>
+        <div class="namespace_note">
+          <b>Namespace:</b> Spit.Publishing</div>
+        <div class="package_note">
+          <b>Package:</b> shotwell-plugin-dev</div>
+        <h2 class="main_title">Content:</h2>
+        <h3 class="main_title">Enums:</h3>
+        <ul class="navi_inline">
+          <li class="enum">
+            <a href="Spit.Publishing.PluginHost.ButtonMode.html">ButtonMode</a> - <span class="brief_description">Specifies the label text on the push
+              button control that appears in the lower-right-hand corner of the on-screen publishing dialog box. </span></li>
+        </ul>
+        <h3 class="main_title">Methods:</h3>
+        <ul class="navi_inline">
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_keyword">void</span> <b><a href="Spit.Publishing.PluginHost.post_error.html" class="abstract_method">post_error</a></b> (<span class="main_type"><code>Error</code></span> err)
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Notifies the user that an unrecoverable publishing error has occurred and halts the publishing process. 
+              </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_keyword">void</span> <b><a href="Spit.Publishing.PluginHost.stop_publishing.html" class="abstract_method">stop_publishing</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Halts the publishing process. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_type"><a href="Spit.Publishing.Publisher.html" class="interface">Publisher</a></span> <b><a href="Spit.Publishing.PluginHost.get_publisher.html" class="abstract_method">get_publisher</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Returns a reference to the <a href="Spit.Publishing.Publisher.html" class="interface">Publisher</a> 
+                object that this is currently hosting. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_keyword">void</span> <b><a href="Spit.Publishing.PluginHost.install_dialog_pane.html" class="abstract_method">install_dialog_pane</a></b> (<span class="main_type"><a href="Spit.Publishing.DialogPane.html" class="interface">DialogPane</a></span> pane, <span class="main_type"><a href="Spit.Publishing.PluginHost.ButtonMode.html" class="enum">ButtonMode</a></span> mode = <b><a href="Spit.Publishing.PluginHost.ButtonMode.CANCEL.html" class="enumvalue">CANCEL</a></b>)
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Attempts to install a pane in the on-screen publishing dialog box, making the pane visible and allowing 
+                it to interact with the user. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_keyword">void</span> <b><a href="Spit.Publishing.PluginHost.install_static_message_pane.html" class="abstract_method">install_static_message_pane</a></b> (<span class="main_basic_type"><code>string</code></span> message, <span class="main_type"><a href="Spit.Publishing.PluginHost.ButtonMode.html" class="enum">ButtonMode</a></span> mode = <b><a href="Spit.Publishing.PluginHost.ButtonMode.CANCEL.html" class="enumvalue">CANCEL</a></b>)
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Attempts to install a pane in the on-screen publishing dialog box that contains static text. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_keyword">void</span> <b><a href="Spit.Publishing.PluginHost.install_pango_message_pane.html" class="abstract_method">install_pango_message_pane</a></b> (<span class="main_basic_type"><code>string</code></span> markup, <span class="main_type"><a href="Spit.Publishing.PluginHost.ButtonMode.html" class="enum">ButtonMode</a></span> mode = <b><a href="Spit.Publishing.PluginHost.ButtonMode.CANCEL.html" class="enumvalue">CANCEL</a></b>)
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Works just like 
+                <a href="Spit.Publishing.PluginHost.install_static_message_pane.html" class="abstract_method">install_static_message_pane</a> but 
+                allows markup to contain Pango text formatting tags as well as unstyled text. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_keyword">void</span> <b><a href="Spit.Publishing.PluginHost.install_success_pane.html" class="abstract_method">install_success_pane</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Attempts to install a pane in the on-screen publishing dialog box notifying the user that his or her 
+                publishing operation completed successfully. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_keyword">void</span> <b><a href="Spit.Publishing.PluginHost.install_account_fetch_wait_pane.html" class="abstract_method">install_account_fetch_wait_pane</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Attempts to install a pane displaying the static text “Fetching account information...” in the on-
+                screen publishing dialog box, making it visible to the user. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_keyword">void</span> <b><a href="Spit.Publishing.PluginHost.install_login_wait_pane.html" class="abstract_method">install_login_wait_pane</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Works just like 
+                <a href="Spit.Publishing.PluginHost.install_account_fetch_wait_pane.html" class="abstract_method">install_account_fetch_wait_pane</a> 
+                but displays the static text “Logging in...“ </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_keyword">void</span> <b><a href="Spit.Publishing.PluginHost.install_welcome_pane.html" class="abstract_method">install_welcome_pane</a></b> (<span class="main_basic_type"><code>string</code></span> welcome_message, <span class="main_type"><a href="Spit.Publishing.LoginCallback.html" class="delegate">LoginCallback</a></span> on_login_clicked)
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Attempts to install a pane displaying the text 'welcome_message' above a push button labeled “Login”
+                in the on-screen publishing dialog box, making it visible to the user. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_keyword">void</span> <b><a href="Spit.Publishing.PluginHost.set_service_locked.html" class="abstract_method">set_service_locked</a></b> (<span class="main_basic_type"><code>bool</code></span> is_locked)
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Toggles whether the service selector combo box in the upper-right-hand corner of the on-screen 
+                publishing dialog box is sensitive to input. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_keyword">void</span> <b><a href="Spit.Publishing.PluginHost.set_dialog_default_widget.html" class="abstract_method">set_dialog_default_widget</a></b> (<span class="main_type"><code>Widget</code></span> widget)
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Makes the designated widget the default widget for the publishing dialog. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_type"><a href="Spit.Publishing.Publishable.html" class="interface">Publishable</a></span>[] <b><a href="Spit.Publishing.PluginHost.get_publishables.html" class="abstract_method">get_publishables</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Returns an array of the publishable media items that the user has selected for upload to the remote 
+                service. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_type"><a href="Spit.Publishing.ProgressCallback.html" class="delegate">ProgressCallback</a></span>? <b><a href="Spit.Publishing.PluginHost.serialize_publishables.html" class="abstract_method">serialize_publishables</a></b> (<span class="main_basic_type"><code>int</code></span> content_major_axis, <span class="main_basic_type"><code>bool</code></span> strip_metadata =<span class="main_optional_parameter">false</span>)
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Writes all of the publishable media items that the user has selected for upload to the remote service to
+                a temporary directory on a local disk. </span>
+            </div></li>
+          <li class="abstract_method">
+            <span class="leaf_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_type"><a href="Spit.Publishing.Publisher.MediaType.html" class="enum">MediaType</a></span> <b><a href="Spit.Publishing.PluginHost.get_publishable_media_type.html" class="abstract_method">get_publishable_media_type</a></b> ()
+            </span>
+            <div class="leaf_brief_description">
+              <span class="brief_description">Returns a <a href="Spit.Publishing.Publisher.MediaType.html" class="enum">Publisher.MediaType</a> 
+                bitfield describing which kinds of media are present in the set of publishable media items that the user has selected for upload to 
+                the remote service. </span>
+            </div></li>
+        </ul>
+      </div>
+    </div>
+    <br/>
+    <div class="site_footer">Generated by <a href="http://www.valadoc.org/">Valadoc</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <title>Vala Binding Reference</title>
+    <link href="../style.css" rel="stylesheet" type="text/css"/>
+    <script src="../scripts.js" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <div class="site_header">Spit.Publishing.PluginHost.serialize_publishables Reference Manual</div>
+    <div class="site_body">
+      <div class="site_navigation">
+        <ul class="navi_main">
+          <li class="package_index">
+            <a href="../index.html">Packages</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="package">
+            <a href="index.htm">shotwell-plugin-dev</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="namespace">
+            <a href="Spit.html">Spit</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="namespace">
+            <a href="Spit.Publishing.html">Publishing</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="interface">
+            <a href="Spit.Publishing.PluginHost.html">PluginHost</a></li>
+        </ul>
+        <hr class="navi_hr"/>
+        <ul class="navi_main">
+          <li class="enum">
+            <a href="Spit.Publishing.PluginHost.ButtonMode.html">ButtonMode</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.get_publishable_media_type.html">get_publishable_media_type</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.get_publishables.html">get_publishables</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.get_publisher.html">get_publisher</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.install_account_fetch_wait_pane.html">install_account_fetch_wait_pane</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.install_dialog_pane.html">install_dialog_pane</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.install_login_wait_pane.html">install_login_wait_pane</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.install_pango_message_pane.html">install_pango_message_pane</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.install_static_message_pane.html">install_static_message_pane</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.install_success_pane.html">install_success_pane</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.install_welcome_pane.html">install_welcome_pane</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.post_error.html">post_error</a></li>
+          <li class="abstract_method">serialize_publishables</li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.set_dialog_default_widget.html">set_dialog_default_widget</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.set_service_locked.html">set_service_locked</a></li>
+          <li class="abstract_method">
+            <a href="Spit.Publishing.PluginHost.stop_publishing.html">stop_publishing</a></li>
+        </ul>
+      </div>
+      <div class="site_content">
+        <h1 class="main_title">serialize_publishables</h1>
+        <hr class="main_hr"/>
+        <h2 class="main_title">Description:</h2>
+        <div class="main_code_definition"><span class="main_keyword">public</span> <span class="main_keyword">abstract</span> <span class="main_type"><a href="Spit.Publishing.ProgressCallback.html" class="delegate">ProgressCallback</a></span>? <b><a href="Spit.Publishing.PluginHost.serialize_publishables.html" class="abstract_method">serialize_publishables</a></b> (<span class="main_basic_type"><code>int</code></span> content_major_axis, <span class="main_basic_type"><code>bool</code></span> strip_metadata =<span class="main_optional_parameter">false</span>)
+        </div>
+        <div class="description">
+          <p>Writes all of the publishable media items that the user has selected for upload to the remote service to a temporary directory on a local
+            disk. </p>
+          <p>You should call this method immediately before sending the publishable media items to the remote service over the network. Because 
+            serializing several megabytes of data is a potentially lengthy operation, calling this method installs an activity status pane in the on-
+            screen publishing dialog box. The activity status pane displays a progress bar along with a string of informational text. </p>
+          <p>Because sending items over the network to the remote service is also a potentially lengthy operation, you should leave the activity 
+            status pane installed in the on-screen publishing dialog box until this task is finished. Periodically during the sending process, you 
+            should report to the user on the progress of his or her upload. You can do this by invoking the returned 
+            <a href="Spit.Publishing.ProgressCallback.html" class="delegate">ProgressCallback</a> delegate. </p>
+          <p>After calling this method, the activity status pane that this method installs remains displayed in the on-screen publishing dialog box 
+            until you install a new pane. </p>
+          <h2 class="main_title">Parameters:</h2>
+          <table class="main_parameter_table">
+            <tr>
+              <td class="main_parameter_table_name">content_major_axis</td>
+              <td>when serializing publishable media items that are photos, ensure that neither the width nor the height of the serialized photo is 
+                greater than content_major_axis pixels. The value of this parameter has no effect on video publishables. </td>
+            </tr>
+            <tr>
+              <td class="main_parameter_table_name">strip_metadata</td>
+              <td>when serializing publishable media items that are photos, if strip_metadata is true, all EXIF, IPTC, and XMP metadata will be 
+                removed from the serialized file. If strip_metadata is false, all metadata will be left intact. The value of this parameter has no 
+                effect on video publishables. </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <div class="site_footer">Generated by <a href="http://www.valadoc.org/">Valadoc</a>
+    </div>
+  </body>
+</html>
